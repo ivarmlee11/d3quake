@@ -1,0 +1,10 @@
+* {
+	text-align: center;
+}
+
+div.tooltip {	
+	position: absolute;			
+	text-align: left;
+	background: white;
+	pointer-events: none;
+}
