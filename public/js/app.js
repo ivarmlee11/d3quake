@@ -1,4 +1,5 @@
 (function() {
+console.log('heroku test')
 const width = 1500,
       height = 2000
 
