@@ -128,7 +128,7 @@ function ready(err, dataPoints) {
       .restart()
   })
 
-    d3.select('#mag2').on('click', function() {
+  d3.select('#mag2').on('click', function() {
     simulation
       .force('x', d3.forceX(function(d) {
         if (d.magnitude >= 2 && d.magnitude < 3) { 
