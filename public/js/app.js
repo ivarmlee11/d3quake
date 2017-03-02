@@ -1,6 +1,6 @@
 (function() {
-const width = 600,
-      height = 600
+const width = 1000,
+      height = 1000
 
 const svg = d3.select('#chart')
   .append('svg')
@@ -10,14 +10,14 @@ const svg = d3.select('#chart')
   .attr('transform', 'translate(0,0)')
 
 const radiusScale = d3.scaleSqrt()
-      .domain([5, 9])
-      .range([10, 90])
+      .domain([1, 9])
+      .range([1, 15])
 
 const simulation = d3.forceSimulation()
-  .force('x', d3.forceX(width / 2).strength(0.05))
-  .force('y',  d3.forceY(height / 2).strength(0.05))
+  .force('x', d3.forceX(width / 2).strength(0.03))
+  .force('y',  d3.forceY(height / 2).strength(0.03))
   .force('collide', d3.forceCollide(function(d) {
-    return radiusScale(d.magnitude) + 1
+    return radiusScale(d.magnitude)
   }))
 
 const tooltip = d3.select('body').append('div')   
@@ -40,16 +40,24 @@ function ready(err, dataPoints) {
     .style('fill', 
       function(d) {
         let returnColor
-        if (d.magnitude < 5.5) { 
+        if (d.magnitude >= 1 && d.magnitude < 2) { 
           returnColor = 'green'
-        } else if (d.magnitude >= 5.5 && d.magnitude < 6) { 
-          returnColor = 'purple'
-        } else if (d.magnitude >= 6 && d.magnitude < 6.5) {
-          returnColor = 'yellow';
-        } else if (d.magnitude >= 6.5 && d.magnitude < 7.5) {
+        } else if (d.magnitude >= 2 && d.magnitude < 3) {
+          returnColor = 'yellow'
+        } else if (d.magnitude >= 3 && d.magnitude < 4) {
           returnColor = 'blue'
-        } else if (d.magnitude >= 7.5) {
+        } else if (d.magnitude >= 4 && d.magnitude < 4.5) {
           returnColor = 'red'
+        } else if (d.magnitude >= 4.5 && d.magnitude < 5) {
+          returnColor = 'black'
+        } else if (d.magnitude >= 5 && d.magnitude < 5.3) { 
+          returnColor = 'pink'
+        } else if (d.magnitude >= 5.3 && d.magnitude < 5.7) {
+          returnColor = 'purple'
+        } else if (d.magnitude >= 5.7 && d.magnitude < 6.5) {
+          returnColor = 'silver'
+        } else {
+          returnColor = 'lavender'
         }
         return returnColor
       })
