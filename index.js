@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static('public'))
 
 const job = new CronJob({
-  cronTime: '* */5 * * *',
+  cronTime: '* */1 * * *',
   onTick: () => {
 		request('https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&updatedafter=2017-01-02&minmagnitude=5&orderby=magnitude',
 		 (error, response, data) => {
@@ -63,4 +63,4 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
