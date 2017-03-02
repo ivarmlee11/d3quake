@@ -37,7 +37,22 @@ function ready(err, dataPoints) {
     .attr('r', function(d) {
       return radiusScale(d.magnitude)
     })
-    .attr('fill', 'green')
+    .style('fill', 
+      function(d) {
+        let returnColor
+        if (d.magnitude < 5.5) { 
+          returnColor = 'green'
+        } else if (d.magnitude >= 5.5 && d.magnitude < 6) { 
+          returnColor = 'purple'
+        } else if (d.magnitude >= 6 && d.magnitude < 6.5) {
+          returnColor = 'yellow';
+        } else if (d.magnitude >= 6.5 && d.magnitude < 7.5) {
+          returnColor = 'blue'
+        } else if (d.magnitude >= 7.5) {
+          returnColor = 'red'
+        }
+        return returnColor
+      })
 
 
   circles.on('mousemove', function(d) {
