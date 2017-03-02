@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>  
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <title>Earthquakes</title>  
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+
     <link href="styles/main.css" rel="stylesheet" type="text/css"/>
+
     <link rel="icon" href="/img/bigheads.png" type="image/x-icon" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+    crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="text-center">
+      <h1> 2017 Earthquakes via <a href="https://www.usgs.gov/">USGS</a> </h1>
+    </div>
+    <div class="btn-group" role="group" aria-label="...">
+      <button id="all" type="button" class="btn btn-default">All</button>      
+      <button id="mag1" type="button" class="btn btn-default">1</button>
+      <button  id="mag2" type="button" class="btn btn-default">2</button>
+      <button  id="mag3" type="button" class="btn btn-default">3</button>
+      <button  id="mag4" type="button" class="btn btn-default">4</button>
+      <button  id="mag5" type="button" class="btn btn-default">5</button>
+      <button  id="mag6" type="button" class="btn btn-default">6</button>
+      <button  id="mag7" type="button" class="btn btn-default">7</button>
+      <button  id="mag8" type="button" class="btn btn-default">8</button>
+      <button  id="mag9" type="button" class="btn btn-default">9</button>
+    </div>
 		<div id="chart">
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.0/d3.min.js"></script>	

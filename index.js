@@ -18,6 +18,14 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(express.static('public'))
 
+try {
+    new CronJob('*/5 * * * *', function() {
+        console.log('this should not be printed');
+    })
+} catch(ex) {
+    console.log("cron pattern not valid");
+}
+
 const job = new CronJob({
   cronTime: '* * */1 * *',
   onTick: () => {
