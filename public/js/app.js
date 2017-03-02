@@ -1,6 +1,6 @@
 (function() {
-const width = 1000,
-      height = 1000
+const width = 1500,
+      height = 1500
 
 const svg = d3.select('#chart')
   .append('svg')
@@ -14,8 +14,8 @@ const radiusScale = d3.scaleSqrt()
       .range([1, 15])
 
 const simulation = d3.forceSimulation()
-  .force('x', d3.forceX(width / 2).strength(0.03))
-  .force('y',  d3.forceY(height / 2).strength(0.03))
+  .force('x', d3.forceX(width / 2).strength(0.04))
+  .force('y',  d3.forceY(height / 2).strength(0.04))
   .force('collide', d3.forceCollide(function(d) {
     return radiusScale(d.magnitude)
   }))
