@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static('public'))
 
 try {
-    new CronJob('*/5 * * * *', function() {
+    new CronJob('00 30 11 * * 1-5', function() {
         console.log('this should not be printed');
     })
 } catch(ex) {
@@ -27,7 +27,7 @@ try {
 }
 
 const job = new CronJob({
-  cronTime: '* * */1 * *',
+  cronTime: '00 30 11 * * 1-5',
   onTick: () => {
 		request('https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&updatedafter=2017-01-02&minmagnitude=1&orderby=magnitude',
 		 (error, response, data) => {
@@ -45,7 +45,7 @@ const job = new CronJob({
 		  })
 		  console.log(quakeInfo.length)
 
-			let earthquakeDataWriter = csvWriter({ headers: ["magnitude", "placename", "time"]})
+			let earthquakeDataWriter = csvWriter({ headers: ['magnitude', 'placename', 'time']})
 			earthquakeDataWriter.pipe(fs.createWriteStream('./public/data/data.csv'))
 			quakeInfo.forEach((val) => {
 				earthquakeDataWriter

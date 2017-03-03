@@ -1,7 +1,7 @@
 (function() {
 console.log('heroku test')
-const width = 1500,
-      height = 2000
+const width = 1000,
+      height = 800
 
 const svg = d3.select('#chart')
   .append('svg')
@@ -12,17 +12,22 @@ const svg = d3.select('#chart')
 
 const radiusScale = d3.scaleSqrt()
       .domain([1, 9])
-      .range([1, 15])
+      .range([.01, 10])
 
-const forceX = d3.forceX(width / 2).strength(0.04)
+const forceX = d3.forceX(width / 2).strength(0.015)
+const forceY = d3.forceY(height / 2).strength(0.015)
+const changeStrength = 0.175
+const changeAlphaState = 0.175
+const chosenMagnitudeXLocation = 200
+const restOfGroupXLocation = 800
 
 const forceCollide = d3.forceCollide(function(d) {
-      return radiusScale(d.magnitude)
+      return radiusScale(d.magnitude) + 2
     })
 
 const simulation = d3.forceSimulation()
   .force('x', forceX)
-  .force('y',  d3.forceY(height / 2).strength(0.01))
+  .force('y',  forceY)
   .force('collide', forceCollide)
 
 const tooltip = d3.select('body').append('div')   
@@ -37,7 +42,8 @@ function ready(err, dataPoints) {
   console.log(dataPoints.length + ' quakes above 5.0 since 2017')
   const circles = svg.selectAll('.placename')
     .data(dataPoints)
-    .enter().append('circle')
+    .enter()
+    .append('circle')
     .attr('class','placename')
     .attr('r', function(d) {
       return radiusScale(d.magnitude)
@@ -67,10 +73,29 @@ function ready(err, dataPoints) {
           returnColor = 'black'
         }
         return returnColor
-      })
+    })
+    .call(d3.drag()
+    .on('start', dragstarted)
+    .on('drag', dragged)
+    .on('end', dragended))
+
+function dragstarted(d) {
+  d3.select(this).raise().classed('active', true);
+}
+
+function dragged(d) {
+  d3.select(this).attr('cx', d.x = d3.event.x).attr('cy', d.y = d3.event.y);
+}
+
+function dragended(d) {
+  d3.select(this).classed('active', false);
+}
 
   circles.on('mousemove', function(d) {
-    tooltip.transition().duration(200).style('opacity', .9)      
+    tooltip.transition()
+    .duration(200)
+    .style('opacity', .9)
+    .style('border-radius', 10)
     tooltip.html('<h5>' + d.placename + '</h5>' + 
                 '<h5>' + d.magnitude + '</h5>' +
                 '<h5>' + d.time + '</h5>')  
@@ -78,7 +103,7 @@ function ready(err, dataPoints) {
     .style('top', (d3.event.pageY - 28) + 'px')    
   })                  
   .on('mouseout', function(d) {       
-    tooltip.transition().duration(500).style('opacity', 0)   
+    tooltip.transition().duration(200).style('opacity', 0)   
   })
 
   simulation.nodes(dataPoints).
@@ -96,8 +121,11 @@ function ready(err, dataPoints) {
 
   d3.select('#all').on('click', function() {
     simulation
-      .force('x', forceX)
-      .alphaTarget(0.5)
+      .force('x', d3.forceX(function(d) {
+        return 600
+      })
+      .strength(0.05))
+      .alphaTarget(0.1)
       .restart()
   })
 
@@ -105,27 +133,13 @@ function ready(err, dataPoints) {
     simulation
       .force('x', d3.forceX(function(d) {
         if (d.magnitude >= 1 && d.magnitude < 2) { 
-          return 300
+          return chosenMagnitudeXLocation
         } else {
-          return 1200
+          return restOfGroupXLocation
         }
       })
-      .strength(0.5))
-      .alphaTarget(0.5)
-      .restart()
-  })
-
-  d3.select('#mag1').on('click', function() {
-    simulation
-      .force('x', d3.forceX(function(d) {
-        if (d.magnitude >= 1 && d.magnitude < 2) { 
-          return 300
-        } else {
-          return 1200
-        }
-      })
-      .strength(0.5))
-      .alphaTarget(0.5)
+      .strength(changeStrength))
+      .alphaTarget(changeAlphaState)
       .restart()
   })
 
@@ -133,13 +147,13 @@ function ready(err, dataPoints) {
     simulation
       .force('x', d3.forceX(function(d) {
         if (d.magnitude >= 2 && d.magnitude < 3) { 
-          return 300
+          return chosenMagnitudeXLocation
         } else {
-          return 1200
+          return restOfGroupXLocation
         }
       })
-      .strength(0.5))
-      .alphaTarget(0.5)
+      .strength(changeStrength))
+      .alphaTarget(changeAlphaState)
       .restart()
   })
 
@@ -147,13 +161,13 @@ function ready(err, dataPoints) {
     simulation
       .force('x', d3.forceX(function(d) {
         if (d.magnitude >= 3 && d.magnitude < 4) { 
-          return 300
+          return chosenMagnitudeXLocation
         } else {
-          return 1200
+          return restOfGroupXLocation
         }
       })
-      .strength(0.5))
-      .alphaTarget(0.5)
+      .strength(changeStrength))
+      .alphaTarget(changeAlphaState)
       .restart()
   })
 
@@ -161,13 +175,13 @@ function ready(err, dataPoints) {
     simulation
       .force('x', d3.forceX(function(d) {
         if (d.magnitude >= 4 && d.magnitude < 5) { 
-          return 300
+          return chosenMagnitudeXLocation
         } else {
-          return 1200
+          return restOfGroupXLocation
         }
       })
-      .strength(0.5))
-      .alphaTarget(0.5)
+      .strength(changeStrength))
+      .alphaTarget(changeAlphaState)
       .restart()
   })
 
@@ -175,13 +189,13 @@ function ready(err, dataPoints) {
     simulation
       .force('x', d3.forceX(function(d) {
         if (d.magnitude >= 5 && d.magnitude < 6) { 
-          return 300
+          return chosenMagnitudeXLocation
         } else {
-          return 1200
+          return restOfGroupXLocation
         }
       })
-      .strength(0.5))
-      .alphaTarget(0.5)
+      .strength(changeStrength))
+      .alphaTarget(changeAlphaState)
       .restart()
   })
 
@@ -189,13 +203,13 @@ function ready(err, dataPoints) {
     simulation
       .force('x', d3.forceX(function(d) {
         if (d.magnitude >= 6 && d.magnitude < 7) { 
-          return 300
+          return chosenMagnitudeXLocation
         } else {
-          return 1200
+          return restOfGroupXLocation
         }
       })
-      .strength(0.5))
-      .alphaTarget(0.5)
+      .strength(changeStrength))
+      .alphaTarget(changeAlphaState)
       .restart()
   })
 
@@ -203,13 +217,13 @@ function ready(err, dataPoints) {
     simulation
       .force('x', d3.forceX(function(d) {
         if (d.magnitude >= 7 && d.magnitude < 8) { 
-          return 300
+          return chosenMagnitudeXLocation
         } else {
-          return 1200
+          return restOfGroupXLocation
         }
       })
-      .strength(0.5))
-      .alphaTarget(0.5)
+      .strength(changeStrength))
+      .alphaTarget(changeAlphaState)
       .restart()
   })
 
@@ -217,13 +231,13 @@ function ready(err, dataPoints) {
     simulation
       .force('x', d3.forceX(function(d) {
         if (d.magnitude >= 8 && d.magnitude < 9) { 
-          return 300
+          return chosenMagnitudeXLocation
         } else {
-          return 1200
+          return restOfGroupXLocation
         }
       })
-      .strength(0.5))
-      .alphaTarget(0.5)
+      .strength(changeStrength))
+      .alphaTarget(changeAlphaState)
       .restart()
   })
 
@@ -231,13 +245,13 @@ function ready(err, dataPoints) {
     simulation
       .force('x', d3.forceX(function(d) {
         if (d.magnitude >= 9) { 
-          return 300
+          return chosenMagnitudeXLocation
         } else {
-          return 1200
+          return restOfGroupXLocation
         }
       })
-      .strength(0.5))
-      .alphaTarget(0.5)
+      .strength(changeStrength))
+      .alphaTarget(changeAlphaState)
       .restart()
   })
 

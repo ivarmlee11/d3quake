@@ -113,6 +113,7 @@ magnitude,placename,time
 5,"10km WNW of Laiwui, Indonesia",28 Feb 2017 11:08 am
 5,"36km ENE of Namie, Japan",28 Feb 2017 10:43 pm
 5,"37km ENE of Amberley, New Zealand",01 Mar 2017 11:01 am
+5,Iceland region,02 Mar 2017 11:13 am
 4.9,"16km ENE of Kaikoura, New Zealand",01 Feb 2017 02:21 am
 4.9,"42km E of Naze, Japan",01 Feb 2017 10:11 am
 4.9,Pacific-Antarctic Ridge,01 Feb 2017 02:23 pm
@@ -173,8 +174,7 @@ magnitude,placename,time
 4.9,"36km S of Kirakira, Solomon Islands",01 Mar 2017 08:47 am
 4.9,"85km W of Kandrian, Papua New Guinea",01 Mar 2017 08:51 am
 4.9,"68km WSW of Gizo, Solomon Islands",01 Mar 2017 12:33 pm
-4.9,Iceland region,02 Mar 2017 11:13 am
-4.8,"171km ESE of Sucua, Ecuador",31 Jan 2017 03:38 pm
+4.9,"62km WNW of Panguna, Papua New Guinea",02 Mar 2017 12:14 pm
 4.8,"25km SE of Petatlan, Mexico",01 Feb 2017 04:52 pm
 4.8,"55km NNW of Agrihan, Northern Mariana Islands",02 Feb 2017 02:30 am
 4.8,"30km ESE of Namie, Japan",03 Feb 2017 06:15 am
@@ -211,8 +211,6 @@ magnitude,placename,time
 4.8,"115km W of Sinabang, Indonesia",27 Feb 2017 03:26 am
 4.8,"128km E of Iwaki, Japan",28 Feb 2017 12:08 am
 4.8,"33km WSW of Panguna, Papua New Guinea",02 Mar 2017 02:09 am
-4.8,"62km WNW of Panguna, Papua New Guinea",02 Mar 2017 12:14 pm
-4.7,"100km NNW of Nago, Japan",31 Jan 2017 03:24 pm
 4.7,"11km WSW of San Andres, Colombia",31 Jan 2017 04:18 pm
 4.7,"154km W of Pangai, Tonga",01 Feb 2017 05:48 am
 4.7,"101km SSW of Baubau, Indonesia",01 Feb 2017 08:48 am
@@ -550,6 +548,7 @@ magnitude,placename,time
 4.2,"50km WSW of Palaiochora, Greece",26 Feb 2017 03:38 pm
 4.2,"128km NNW of Dobo, Indonesia",28 Feb 2017 03:00 am
 4.2,"48km SSW of Tanaga Volcano, Alaska",28 Feb 2017 08:18 am
+4.2,"134km SSE of Amatignak Island, Alaska",02 Mar 2017 01:58 pm
 4.16,"2km NE of The Geysers, California",20 Feb 2017 04:57 pm
 4.1,"5km ENE of Sorong, Indonesia",01 Feb 2017 10:05 am
 4.1,"61km SW of Karakul, Tajikistan",01 Feb 2017 03:12 pm
@@ -612,7 +611,6 @@ magnitude,placename,time
 4,"51km NNW of San Antonio de los Cobres, Argentina",26 Feb 2017 06:48 am
 4,"15km NNW of Aratoca, Colombia",28 Feb 2017 01:24 am
 4,"40km E of Nobeoka, Japan",02 Mar 2017 07:08 am
-3.9,"78km SW of Puerto Quellon, Chile",31 Jan 2017 02:48 pm
 3.9,"9km NW of Murray Bridge, Australia",01 Feb 2017 05:37 am
 3.9,"122km S of Little Sitkin Island, Alaska",02 Feb 2017 06:53 pm
 3.9,"110km SSW of Atka, Alaska",07 Feb 2017 09:18 am
@@ -620,10 +618,11 @@ magnitude,placename,time
 3.9,"58km E of Atka, Alaska",17 Feb 2017 05:48 am
 3.9,"179km E of Chitina, Alaska",28 Feb 2017 03:48 pm
 3.9,"22km E of Oarai, Japan",28 Feb 2017 04:44 pm
-3.81,"32km SSW of Ferndale, California",02 Mar 2017 12:23 pm
+3.85,"32km SSW of Ferndale, California",02 Mar 2017 12:23 pm
 3.8,"85km ENE of Chirikof Island, Alaska",02 Feb 2017 05:21 am
 3.8,"58km W of Anchor Point, Alaska",05 Feb 2017 08:45 pm
 3.8,"56km S of Semisopochnoi Island, Alaska",06 Feb 2017 12:28 pm
+3.8,"120km SE of Antofagasta, Chile",07 Feb 2017 01:07 pm
 3.8,"40km SE of Tanaga Volcano, Alaska",14 Feb 2017 09:41 pm
 3.8,"16km SSW of Sand Point, Alaska",16 Feb 2017 03:42 am
 3.8,"14km W of Yale, Oklahoma",16 Feb 2017 07:33 am
@@ -837,6 +836,7 @@ magnitude,placename,time
 3,"111km N of Isabela, Puerto Rico",01 Mar 2017 12:14 am
 3,"35km NW of Fairview, Oklahoma",01 Mar 2017 11:49 am
 3,"80km NNE of Luquillo, Puerto Rico",02 Mar 2017 12:32 am
+3,"53km WSW of Anchor Point, Alaska",02 Mar 2017 03:48 pm
 2.99,"27km E of Maneadero, B.C., MX",16 Feb 2017 03:07 pm
 2.98,"22km N of Panguitch, Utah",01 Mar 2017 12:34 am
 2.96,"4km SSE of San Juan Bautista, California",08 Feb 2017 08:19 am
@@ -881,6 +881,7 @@ magnitude,placename,time
 2.9,"6km N of Hatillo, Puerto Rico",27 Feb 2017 02:53 pm
 2.9,"79km NNW of Charlotte Amalie, U.S. Virgin Islands",28 Feb 2017 07:26 am
 2.9,"1km SE of Sabana Seca, Puerto Rico",01 Mar 2017 05:36 am
+2.9,"100km W of Larsen Bay, Alaska",02 Mar 2017 01:17 pm
 2.89,"14km N of Morgan Hill, California",02 Mar 2017 06:27 am
 2.88,"26km ENE of Honaunau-Napoopoo, Hawaii",03 Feb 2017 12:07 pm
 2.85,"10km SW of Athena, Oregon",15 Feb 2017 01:55 pm
@@ -950,7 +951,6 @@ magnitude,placename,time
 2.72,"34km SSW of Ferndale, California",15 Feb 2017 09:19 am
 2.71,"11km WNW of Templeton, California",09 Feb 2017 08:55 pm
 2.71,"45km SW of Ferndale, California",27 Feb 2017 07:04 pm
-2.7,"12km NNE of Hatillo, Puerto Rico",31 Jan 2017 02:58 pm
 2.7,"69km NW of Gustavus, Alaska",03 Feb 2017 03:02 am
 2.7,"11km SE of Emajagua, Puerto Rico",03 Feb 2017 04:49 am
 2.7,"15km SSE of Medford, Oklahoma",05 Feb 2017 10:09 am
@@ -979,7 +979,6 @@ magnitude,placename,time
 2.7,"29km SE of El Negro, Puerto Rico",18 Feb 2017 06:06 pm
 2.7,"18km S of Indios, Puerto Rico",18 Feb 2017 09:55 pm
 2.7,"7km ENE of Guthrie, Oklahoma",18 Feb 2017 10:04 pm
-2.7,"23km NW of Beaver Dam, Arizona",19 Feb 2017 12:58 pm
 2.7,"62km N of Road Town, British Virgin Islands",19 Feb 2017 07:21 pm
 2.7,"25km SSE of Alva, Oklahoma",19 Feb 2017 08:06 pm
 2.7,"30km NW of Rincon, Puerto Rico",20 Feb 2017 04:39 am
@@ -1126,6 +1125,7 @@ magnitude,placename,time
 2.5,"15km S of Whitehall, Montana",01 Mar 2017 02:04 pm
 2.5,"180km NNE of Cape Yakataga, Alaska",01 Mar 2017 06:58 pm
 2.5,"10km S of Emajagua, Puerto Rico",02 Mar 2017 01:13 am
+2.5,"111km W of Cantwell, Alaska",02 Mar 2017 02:09 pm
 2.49,"19km NW of Beaver Dam, Arizona",19 Feb 2017 12:59 pm
 2.49,"8km W of Templeton, California",23 Feb 2017 09:04 am
 2.48,"9km E of Hidden Valley Lake, California",06 Feb 2017 01:06 pm
@@ -1151,7 +1151,6 @@ magnitude,placename,time
 2.42,"18km SSW of Searles Valley, CA",01 Mar 2017 03:43 am
 2.41,"10km NE of Wolf Creek, Utah",08 Feb 2017 12:39 am
 2.41,"10km E of Fredonia, Arizona",01 Mar 2017 12:08 am
-2.41,"14km NE of Pahala, Hawaii",01 Mar 2017 08:21 pm
 2.4,"37km NE of Larsen Bay, Alaska",31 Jan 2017 04:34 pm
 2.4,"89km ENE of Chirikof Island, Alaska",02 Feb 2017 05:17 am
 2.4,"26km SSW of Redoubt Volcano, Alaska",02 Feb 2017 07:21 am
@@ -1232,6 +1231,7 @@ magnitude,placename,time
 2.31,"17km E of Shoshone, CA",09 Feb 2017 02:23 pm
 2.31,"6km NW of The Geysers, California",17 Feb 2017 09:57 pm
 2.31,"17km SW of Malibu, CA",20 Feb 2017 12:27 am
+2.31,"13km NE of Pahala, Hawaii",01 Mar 2017 08:21 pm
 2.3,"63km SSE of Tanaga Volcano, Alaska",01 Feb 2017 03:03 pm
 2.3,"68km W of Anchor Point, Alaska",02 Feb 2017 02:33 pm
 2.3,"116km WSW of Chernabura Island, Alaska",04 Feb 2017 07:42 pm
@@ -1284,6 +1284,7 @@ magnitude,placename,time
 2.3,"52km WSW of Anchor Point, Alaska",01 Mar 2017 08:04 pm
 2.3,"33km SSE of Redoubt Volcano, Alaska",02 Mar 2017 12:42 am
 2.3,"95km NNW of Talkeetna, Alaska",02 Mar 2017 02:06 am
+2.3,"72km NW of Talkeetna, Alaska",02 Mar 2017 02:53 pm
 2.29,"11km SSE of Princeton, Canada",02 Feb 2017 02:10 pm
 2.29,"16km NNE of West Yellowstone, Montana",11 Feb 2017 03:16 am
 2.29,"12km S of Ridgemark, California",21 Feb 2017 08:34 am
@@ -1301,6 +1302,7 @@ magnitude,placename,time
 2.27,"35km ENE of Covelo, California",14 Feb 2017 01:28 am
 2.27,"26km SSW of Coalinga, California",20 Feb 2017 06:21 am
 2.26,"14km E of Angwin, California",15 Feb 2017 05:13 am
+2.26,"23km NNW of Beaver Dam, Arizona",19 Feb 2017 12:58 pm
 2.25,"2km SSW of Pahala, Hawaii",19 Feb 2017 04:59 am
 2.25,"29km SSW of South Dos Palos, California",25 Feb 2017 02:29 pm
 2.25,"32km E of King City, California",02 Mar 2017 01:36 am
@@ -1314,6 +1316,7 @@ magnitude,placename,time
 2.21,"35km NE of Bonners Ferry, Idaho",16 Feb 2017 03:17 am
 2.21,"12km S of Princeton, Canada",26 Feb 2017 02:13 pm
 2.21,"19km S of McCall, Idaho",01 Mar 2017 04:38 am
+2.21,"5km SSW of Volcano, Hawaii",02 Mar 2017 04:06 pm
 2.2,"14km SSW of Guanica, Puerto Rico",31 Jan 2017 09:15 pm
 2.2,"124km SE of Old Iliamna, Alaska",01 Feb 2017 01:33 pm
 2.2,"63km E of Akutan, Alaska",01 Feb 2017 07:48 pm
@@ -1532,6 +1535,7 @@ magnitude,placename,time
 2.1,"16km S of Carlin, Nevada",27 Feb 2017 04:43 pm
 2.1,"38km WSW of Healy, Alaska",01 Mar 2017 01:00 am
 2.1,"60km SW of Tok, Alaska",01 Mar 2017 02:43 am
+2.1,"5km ESE of Big Lake, Alaska",02 Mar 2017 01:50 pm
 2.09,"19km ENE of Lone Pine, CA",31 Jan 2017 11:10 pm
 2.09,"5km WNW of Cobb, California",19 Feb 2017 05:38 am
 2.09,"41km ESE of Bridgeport, California",23 Feb 2017 09:03 pm
@@ -1588,7 +1592,6 @@ magnitude,placename,time
 2.02,"8km SSE of San Juan Bautista, California",18 Feb 2017 03:46 pm
 2.02,"7km SE of Harper, Kansas",24 Feb 2017 02:06 am
 2.02,"39km NNW of Chilliwack, Canada",25 Feb 2017 12:32 pm
-2.01,"11km WSW of Morongo Valley, CA",31 Jan 2017 03:49 pm
 2.01,"17km SE of Julian, CA",03 Feb 2017 01:24 pm
 2.01,"39km W of Page, Arizona",03 Feb 2017 02:01 pm
 2.01,"4km SSE of San Juan Bautista, California",08 Feb 2017 08:43 am
@@ -1596,7 +1599,6 @@ magnitude,placename,time
 2.01,"8km W of Templeton, California",11 Feb 2017 01:49 pm
 2.01,"13km SE of Mammoth Lakes, California",12 Feb 2017 08:09 pm
 2.01,"14km S of Fern Acres, Hawaii",02 Mar 2017 08:56 am
-2,"71km SE of Nikolski, Alaska",31 Jan 2017 02:52 pm
 2,"16km NNE of Charlotte Amalie, U.S. Virgin Islands",31 Jan 2017 07:28 pm
 2,"39km E of Akutan, Alaska",01 Feb 2017 08:48 am
 2,"56km E of Whittier, Alaska",01 Feb 2017 08:54 am
@@ -1759,6 +1761,7 @@ magnitude,placename,time
 1.91,"18km NNE of Upper Lake, California",17 Feb 2017 06:53 am
 1.91,"6km S of Lilbourn, Missouri",22 Feb 2017 12:05 pm
 1.91,"1km ENE of Brea, CA",26 Feb 2017 09:31 pm
+1.91,"5km S of Volcano, Hawaii",02 Mar 2017 04:11 pm
 1.9,"62km SSW of Redoubt Volcano, Alaska",31 Jan 2017 09:01 pm
 1.9,"35km NNW of Anchor Point, Alaska",01 Feb 2017 12:30 am
 1.9,"69km WSW of Dutch Harbor, Alaska",01 Feb 2017 07:12 am
@@ -1889,6 +1892,7 @@ magnitude,placename,time
 1.9,"6km NW of The Geysers, California",01 Mar 2017 04:58 am
 1.9,"29km WSW of Hawthorne, Nevada",01 Mar 2017 11:06 pm
 1.9,"179km NNE of Cape Yakataga, Alaska",02 Mar 2017 07:59 am
+1.9,"136km E of Chitina, Alaska",02 Mar 2017 02:49 pm
 1.89,"0km N of Pahala, Hawaii",11 Feb 2017 11:43 pm
 1.89,"2km NE of The Geysers, California",20 Feb 2017 04:57 pm
 1.89,"8km ENE of San Martin, California",23 Feb 2017 04:13 am
@@ -1940,6 +1944,7 @@ magnitude,placename,time
 1.83,"1km SSE of Kahaluu-Keauhou, Hawaii",19 Feb 2017 11:05 pm
 1.83,"1km SE of Pahala, Hawaii",21 Feb 2017 03:59 am
 1.83,"3km ESE of Indianola, Washington",22 Feb 2017 03:54 am
+1.83,"15km SSW of Valle Vista, CA",02 Mar 2017 08:31 am
 1.82,"8km NW of Friday Harbor, Washington",01 Feb 2017 10:56 am
 1.82,"3km E of Granite Falls, Washington",02 Feb 2017 03:34 pm
 1.82,"6km SSE of Honaunau-Napoopoo, Hawaii",08 Feb 2017 08:23 pm
@@ -1961,8 +1966,6 @@ magnitude,placename,time
 1.81,"2km ENE of The Geysers, California",20 Feb 2017 10:30 pm
 1.81,"5km WNW of Cobb, California",27 Feb 2017 11:55 am
 1.81,"26km E of Honaunau-Napoopoo, Hawaii",27 Feb 2017 05:21 pm
-1.81,"15km SSW of Valle Vista, CA",02 Mar 2017 08:31 am
-1.8,"69km SE of Unalaska, Alaska",31 Jan 2017 01:42 pm
 1.8,"75km W of Anchor Point, Alaska",31 Jan 2017 09:15 pm
 1.8,"73km SSW of Redoubt Volcano, Alaska",01 Feb 2017 09:14 am
 1.8,"23km NNE of Badger, Alaska",01 Feb 2017 04:42 pm
@@ -2110,6 +2113,7 @@ magnitude,placename,time
 1.8,"23km N of Panguitch, Utah",01 Mar 2017 03:33 pm
 1.8,"5km NE of Diamond Ridge, Alaska",02 Mar 2017 01:59 am
 1.8,"38km SSE of Redoubt Volcano, Alaska",02 Mar 2017 04:16 am
+1.8,"54km WSW of Cantwell, Alaska",02 Mar 2017 12:54 pm
 1.79,"6km SW of Volcano, Hawaii",01 Feb 2017 06:21 am
 1.79,"9km NW of Friday Harbor, Washington",02 Feb 2017 02:12 am
 1.79,"2km E of Anthony, Kansas",03 Feb 2017 10:48 am
@@ -2118,6 +2122,7 @@ magnitude,placename,time
 1.79,"18km SE of Anthony, Kansas",12 Feb 2017 01:55 am
 1.79,"7km NNW of Port Angeles, Washington",24 Feb 2017 12:33 pm
 1.79,"7km WNW of The Geysers, California",28 Feb 2017 11:16 am
+1.79,"4km S of Volcano, Hawaii",02 Mar 2017 04:11 pm
 1.78,"9km SSW of Volcano, Hawaii",01 Feb 2017 08:54 pm
 1.78,"18km ENE of Thousand Palms, CA",03 Feb 2017 11:52 am
 1.78,"25km WSW of Coalinga, California",06 Feb 2017 01:21 am
@@ -2130,7 +2135,6 @@ magnitude,placename,time
 1.78,"10km ENE of Imperial, CA",27 Feb 2017 08:25 pm
 1.78,"22km NE of Soledad, California",28 Feb 2017 12:40 pm
 1.78,"9km W of Templeton, California",01 Mar 2017 10:13 am
-1.77,"22km W of Pepeekeo, Hawaii",31 Jan 2017 01:16 pm
 1.77,"4km SSW of Volcano, Hawaii",04 Feb 2017 06:53 pm
 1.77,"7km SSE of San Juan Bautista, California",06 Feb 2017 12:39 pm
 1.77,"32km ESE of Pahala, Hawaii",17 Feb 2017 12:48 am
@@ -2205,9 +2209,6 @@ magnitude,placename,time
 1.71,"5km SW of Volcano, Hawaii",25 Feb 2017 05:28 am
 1.71,"10km W of Old Faithful Geyser, Wyoming",25 Feb 2017 11:44 am
 1.71,"17km NNE of Three Forks, Montana",28 Feb 2017 12:41 pm
-1.7,"34km E of Cantwell, Alaska",31 Jan 2017 03:07 pm
-1.7,"2km SE of Pahala, Hawaii",31 Jan 2017 03:25 pm
-1.7,"143km SSE of Tok, Alaska",31 Jan 2017 03:42 pm
 1.7,"36km SSE of Manley Hot Springs, Alaska",31 Jan 2017 08:06 pm
 1.7,"6km ENE of Gerlach-Empire, Nevada",01 Feb 2017 06:32 am
 1.7,"57km NNE of Redoubt Volcano, Alaska",01 Feb 2017 09:29 am
@@ -2357,7 +2358,7 @@ magnitude,placename,time
 1.7,"34km W of Nikiski, Alaska",01 Mar 2017 11:22 am
 1.7,"42km WSW of Valdez, Alaska",02 Mar 2017 04:41 am
 1.7,"62km S of Deltana, Alaska",02 Mar 2017 10:02 am
-1.7,"55km WSW of Cantwell, Alaska",02 Mar 2017 12:54 pm
+1.7,"54km S of Redoubt Volcano, Alaska",02 Mar 2017 12:19 pm
 1.69,"9km NE of Aguanga, CA",01 Feb 2017 05:34 am
 1.69,"22km N of Kernville, CA",04 Feb 2017 06:11 am
 1.69,"35km NE of Ensenada, B.C., MX",07 Feb 2017 11:00 pm
@@ -2439,10 +2440,7 @@ magnitude,placename,time
 1.61,"6km SE of The Geysers, California",22 Feb 2017 09:09 pm
 1.61,"8km SSW of Volcano, Hawaii",28 Feb 2017 05:50 am
 1.61,"4km NW of Tiptonville, Tennessee",01 Mar 2017 04:52 am
-1.6,"28km NW of Valdez, Alaska",31 Jan 2017 01:29 pm
-1.6,"30km WSW of Hawthorne, Nevada",31 Jan 2017 02:17 pm
-1.6,"34km E of Cantwell, Alaska",31 Jan 2017 03:49 pm
-1.6,"34km W of Larsen Bay, Alaska",31 Jan 2017 04:16 pm
+1.61,"5km SSE of Eagle Point, Oregon",02 Mar 2017 01:33 pm
 1.6,"30km WSW of Hawthorne, Nevada",31 Jan 2017 04:18 pm
 1.6,"44km SW of Healy, Alaska",31 Jan 2017 06:37 pm
 1.6,"112km NNW of Larsen Bay, Alaska",01 Feb 2017 02:44 am
@@ -2642,6 +2640,8 @@ magnitude,placename,time
 1.6,"28km WSW of Hawthorne, Nevada",28 Feb 2017 01:14 am
 1.6,"16km NE of Little Lake, CA",28 Feb 2017 02:33 pm
 1.6,"14km N of Cantwell, Alaska",02 Mar 2017 03:24 am
+1.6,"135km E of Chitina, Alaska",02 Mar 2017 03:13 pm
+1.6,"54km SW of Delta Junction, Alaska",02 Mar 2017 03:57 pm
 1.59,"6km ENE of Imperial, CA",05 Feb 2017 09:45 pm
 1.59,"8km SW of Niland, CA",06 Feb 2017 04:41 am
 1.59,"9km SW of Tiptonville, Tennessee",09 Feb 2017 06:36 pm
@@ -2699,6 +2699,7 @@ magnitude,placename,time
 1.55,"11km NE of Three Forks, Montana",19 Feb 2017 09:32 pm
 1.55,"6km SSW of Volcano, Hawaii",23 Feb 2017 03:49 pm
 1.55,"28km ENE of Delta, Utah",25 Feb 2017 03:19 am
+1.55,"35km NNE of McCloud, California",27 Feb 2017 06:58 am
 1.55,"24km WSW of Weed, California",01 Mar 2017 02:34 am
 1.55,"20km W of Winston, Oregon",02 Mar 2017 11:57 am
 1.54,"18km W of Caldwell, Kansas",03 Feb 2017 03:24 pm
@@ -2748,8 +2749,6 @@ magnitude,placename,time
 1.51,"11km SW of Huntington Beach, CA",19 Feb 2017 07:26 am
 1.51,"6km WNW of The Geysers, California",27 Feb 2017 12:19 pm
 1.51,"8km SSW of Carlsbad, CA",27 Feb 2017 02:58 pm
-1.5,"43km NE of Talkeetna, Alaska",31 Jan 2017 02:30 pm
-1.5,"31km E of Cantwell, Alaska",31 Jan 2017 03:38 pm
 1.5,"19km NNE of Badger, Alaska",31 Jan 2017 05:01 pm
 1.5,"28km WSW of Hawthorne, Nevada",01 Feb 2017 01:48 am
 1.5,"12km WSW of Valdez, Alaska",01 Feb 2017 04:32 am
@@ -2921,6 +2920,8 @@ magnitude,placename,time
 1.5,"32km SE of Tanana, Alaska",01 Mar 2017 12:32 pm
 1.5,"181km NNE of Cape Yakataga, Alaska",01 Mar 2017 07:31 pm
 1.5,"75km W of Big Lake, Alaska",02 Mar 2017 08:34 am
+1.5,"89km WNW of Cantwell, Alaska",02 Mar 2017 12:54 pm
+1.5,"28km WSW of Hawthorne, Nevada",02 Mar 2017 04:15 pm
 1.49,"4km SSE of San Juan Bautista, California",08 Feb 2017 12:19 am
 1.49,"6km SSW of Cosmopolis, Washington",13 Feb 2017 04:05 pm
 1.49,"35km ENE of Covelo, California",14 Feb 2017 01:26 am
@@ -2995,7 +2996,6 @@ magnitude,placename,time
 1.44,"8km SSE of Venersborg, Washington",20 Feb 2017 02:03 pm
 1.44,"28km ENE of Greenfield, California",24 Feb 2017 11:41 pm
 1.44,"18km ESE of Anza, CA",25 Feb 2017 12:28 am
-1.43,"30km ENE of Burney, California",31 Jan 2017 02:38 pm
 1.43,"6km NW of The Geysers, California",31 Jan 2017 04:39 pm
 1.43,"6km SSE of Livermore, California",02 Feb 2017 10:47 pm
 1.43,"10km NNE of Upper Lake, California",04 Feb 2017 01:21 pm
@@ -3040,7 +3040,6 @@ magnitude,placename,time
 1.41,"25km SSE of Mammoth Lakes, California",19 Feb 2017 10:46 pm
 1.41,"3km ENE of Banning, CA",25 Feb 2017 09:52 am
 1.41,"9km W of Volcano, Hawaii",28 Feb 2017 04:34 am
-1.4,"28km WSW of Hawthorne, Nevada",31 Jan 2017 02:24 pm
 1.4,"113km S of Coldfoot, Alaska",31 Jan 2017 04:58 pm
 1.4,"75km NW of Larsen Bay, Alaska",31 Jan 2017 08:37 pm
 1.4,"117km WNW of Gustavus, Alaska",31 Jan 2017 09:14 pm
@@ -3298,6 +3297,7 @@ magnitude,placename,time
 1.4,"22km ESE of El Negro, Puerto Rico",01 Mar 2017 12:26 am
 1.4,"22km N of Panguitch, Utah",01 Mar 2017 12:51 am
 1.4,"36km NNE of Fernley, Nevada",01 Mar 2017 02:38 pm
+1.4,"23km NNE of Badger, Alaska",02 Mar 2017 04:07 pm
 1.39,"9km SSW of Holtville, CA",03 Feb 2017 08:47 am
 1.39,"5km NNW of Vonore, Tennessee",04 Feb 2017 04:09 am
 1.39,"33km WNW of Lima, Montana",06 Feb 2017 07:13 pm
@@ -3338,6 +3338,8 @@ magnitude,placename,time
 1.37,"13km SE of Tehachapi, CA",24 Feb 2017 12:57 pm
 1.37,"5km W of Yucaipa, CA",27 Feb 2017 05:48 am
 1.37,"4km WSW of Napavine, Washington",01 Mar 2017 03:26 pm
+1.37,"7km SSW of Mojave, CA",02 Mar 2017 12:14 pm
+1.37,"5km ENE of Rancho San Diego, CA",02 Mar 2017 12:31 pm
 1.36,"24km NE of Trona, CA",01 Feb 2017 12:10 pm
 1.36,"6km W of Cobb, California",03 Feb 2017 05:19 pm
 1.36,"22km N of Kernville, CA",04 Feb 2017 06:10 am
@@ -3373,6 +3375,7 @@ magnitude,placename,time
 1.34,"8km WNW of Townsend, Montana",21 Feb 2017 11:00 am
 1.34,"6km N of Lake Elsinore, CA",24 Feb 2017 10:36 am
 1.34,"13km SE of Anza, CA",01 Mar 2017 08:16 am
+1.34,"6km E of Atascadero, California",02 Mar 2017 11:51 am
 1.33,"12km SW of Big Bear Lake, CA",05 Feb 2017 12:20 pm
 1.33,"7km ENE of Anza, CA",05 Feb 2017 07:28 pm
 1.33,"10km NW of San Jacinto, CA",06 Feb 2017 10:13 pm
@@ -3685,7 +3688,6 @@ magnitude,placename,time
 1.3,"5km SE of The Geysers, California",01 Mar 2017 07:53 am
 1.3,"28km ENE of Bridgeport, California",01 Mar 2017 03:48 pm
 1.3,"59km SE of Hawthorne, Nevada",01 Mar 2017 11:21 pm
-1.3,"3km ENE of Rancho San Diego, CA",02 Mar 2017 12:31 pm
 1.29,"3km ESE of San Ramon, California",31 Jan 2017 08:09 pm
 1.29,"3km SE of The Geysers, California",01 Feb 2017 08:23 am
 1.29,"7km NW of The Geysers, California",01 Feb 2017 11:16 am
@@ -3740,6 +3742,7 @@ magnitude,placename,time
 1.27,"22km ESE of Bodfish, CA",21 Feb 2017 10:08 pm
 1.27,"7km WSW of Saratoga, California",25 Feb 2017 03:00 am
 1.27,"3km S of Yoncalla, Oregon",01 Mar 2017 11:27 am
+1.27,"13km N of Ocotillo Wells, CA",02 Mar 2017 08:09 am
 1.26,"9km ESE of Bodfish, CA",01 Feb 2017 10:07 pm
 1.26,"15km NE of Milpitas, California",02 Feb 2017 01:21 pm
 1.26,"18km ESE of Anza, CA",05 Feb 2017 12:40 am
@@ -3770,7 +3773,7 @@ magnitude,placename,time
 1.25,"3km S of Loyola, California",23 Feb 2017 12:33 pm
 1.25,"13km SSW of Cle Elum, Washington",26 Feb 2017 08:13 pm
 1.25,"39km E of Pablo, Montana",27 Feb 2017 01:24 am
-1.25,"14km N of Ocotillo Wells, CA",02 Mar 2017 08:09 am
+1.25,"10km ESE of Cabazon, CA",02 Mar 2017 02:08 pm
 1.24,"15km SE of Pahala, Hawaii",02 Feb 2017 11:34 am
 1.24,"12km S of Big Bear Lake, CA",07 Feb 2017 08:21 am
 1.24,"6km W of Townsend, Montana",08 Feb 2017 11:14 am
@@ -3786,6 +3789,7 @@ magnitude,placename,time
 1.24,"8km NNE of Beaumont, CA",22 Feb 2017 09:13 am
 1.24,"7km N of Big Bear City, CA",23 Feb 2017 01:07 am
 1.24,"1km NW of The Geysers, California",23 Feb 2017 04:01 pm
+1.24,"6km W of Cobb, California",02 Mar 2017 03:49 pm
 1.23,"8km NW of Friday Harbor, Washington",01 Feb 2017 12:47 am
 1.23,"19km ENE of Thousand Palms, CA",03 Feb 2017 08:47 pm
 1.23,"4km W of Cobb, California",09 Feb 2017 10:03 am
@@ -3826,7 +3830,6 @@ magnitude,placename,time
 1.21,"6km SSE of Lilbourn, Missouri",28 Feb 2017 02:38 am
 1.21,"6km ESE of Escondido, CA",28 Feb 2017 03:13 pm
 1.21,"28km W of Cle Elum, Washington",01 Mar 2017 06:07 pm
-1.2,"28km WSW of Hawthorne, Nevada",31 Jan 2017 01:29 pm
 1.2,"43km WSW of Cantwell, Alaska",31 Jan 2017 05:40 pm
 1.2,"17km NNW of Currant, Nevada",31 Jan 2017 08:09 pm
 1.2,"22km NNE of Hawthorne, Nevada",31 Jan 2017 09:14 pm
@@ -4006,6 +4009,7 @@ magnitude,placename,time
 1.2,"14km SSW of Talkeetna, Alaska",19 Feb 2017 01:04 am
 1.2,"25km NNW of Beaver Dam, Arizona",19 Feb 2017 01:19 am
 1.2,"79km W of Cantwell, Alaska",19 Feb 2017 06:20 am
+1.2,"12km S of Enterprise, Utah",19 Feb 2017 06:44 am
 1.2,"28km NW of Valdez, Alaska",19 Feb 2017 08:37 am
 1.2,"29km NNE of Fritz Creek, Alaska",19 Feb 2017 10:43 am
 1.2,"42km WSW of Whittier, Alaska",19 Feb 2017 10:50 am
@@ -4094,7 +4098,6 @@ magnitude,placename,time
 1.19,"3km ESE of Home Gardens, CA",28 Feb 2017 02:31 pm
 1.19,"6km SW of Volcano, Hawaii",01 Mar 2017 04:38 am
 1.19,"5km WNW of Cobb, California",01 Mar 2017 04:12 pm
-1.18,"5km SE of The Geysers, California",31 Jan 2017 02:29 pm
 1.18,"15km NNE of Pahala, Hawaii",04 Feb 2017 05:54 am
 1.18,"25km NE of Soledad, California",08 Feb 2017 02:03 am
 1.18,"7km S of Cabazon, CA",09 Feb 2017 06:46 am
@@ -4127,7 +4130,6 @@ magnitude,placename,time
 1.17,"6km NNE of Beaumont, CA",19 Feb 2017 07:58 pm
 1.17,"2km ENE of The Geysers, California",22 Feb 2017 10:38 pm
 1.17,"23km SW of Coalinga, California",27 Feb 2017 12:12 am
-1.16,"6km SSW of Morongo Valley, CA",31 Jan 2017 02:13 pm
 1.16,"12km ENE of Cloverdale, California",01 Feb 2017 07:07 pm
 1.16,"9km NW of West Bishop, California",02 Feb 2017 10:55 am
 1.16,"7km N of Big Bear Lake, CA",03 Feb 2017 08:46 pm
@@ -4204,7 +4206,6 @@ magnitude,placename,time
 1.13,"21km NE of Soledad, California",22 Feb 2017 11:35 am
 1.13,"21km NE of Soledad, California",22 Feb 2017 06:40 pm
 1.13,"4km NE of Alameda, California",01 Mar 2017 05:14 am
-1.12,"9km NE of Aguanga, CA",31 Jan 2017 04:10 pm
 1.12,"56km E of Lima, Montana",01 Feb 2017 03:31 am
 1.12,"6km NW of The Geysers, California",03 Feb 2017 11:26 am
 1.12,"9km WNW of Cobb, California",05 Feb 2017 04:09 am
@@ -4222,7 +4223,6 @@ magnitude,placename,time
 1.12,"6km NW of The Geysers, California",23 Feb 2017 03:48 pm
 1.12,"5km WNW of The Geysers, California",24 Feb 2017 08:09 am
 1.12,"3km WSW of Cobb, California",27 Feb 2017 11:30 pm
-1.12,"1km NNW of Loma Linda, CA",02 Mar 2017 12:33 pm
 1.11,"36km S of Anaconda, Montana",02 Feb 2017 07:33 am
 1.11,"2km SE of Palmdale, CA",02 Feb 2017 07:19 pm
 1.11,"11km NW of Tiptonville, Tennessee",04 Feb 2017 11:25 pm
@@ -4239,7 +4239,6 @@ magnitude,placename,time
 1.11,"6km W of Cobb, California",25 Feb 2017 07:58 pm
 1.11,"25km SE of Mammoth Lakes, California",01 Mar 2017 07:23 am
 1.11,"1km NNW of The Geysers, California",01 Mar 2017 10:08 am
-1.1,"53km NNE of Yakutat, Alaska",31 Jan 2017 03:34 pm
 1.1,"44km W of Valdez, Alaska",31 Jan 2017 10:12 pm
 1.1,"25km E of Glennallen, Alaska",31 Jan 2017 11:33 pm
 1.1,"98km NW of Nikiski, Alaska",01 Feb 2017 12:29 am
@@ -4540,6 +4539,7 @@ magnitude,placename,time
 1.09,"7km ENE of Clearlake Oaks, California",28 Feb 2017 11:14 pm
 1.09,"13km WNW of Orangeville, Utah",01 Mar 2017 10:10 am
 1.09,"27km NNW of Packwood, Washington",02 Mar 2017 02:36 am
+1.09,"11km SE of Graham, Washington",02 Mar 2017 12:42 pm
 1.08,"7km SW of Lilbourn, Missouri",01 Feb 2017 03:57 pm
 1.08,"6km E of Calimesa, CA",02 Feb 2017 05:06 am
 1.08,"24km WNW of Inyokern, CA",03 Feb 2017 03:53 am
@@ -4645,7 +4645,6 @@ magnitude,placename,time
 1.04,"4km NE of Lake Henshaw, CA",28 Feb 2017 04:13 pm
 1.04,"0km NNW of Seattle, Washington",28 Feb 2017 05:34 pm
 1.04,"9km WNW of The Geysers, California",01 Mar 2017 11:22 pm
-1.03,"18km W of Cedar City, Utah",31 Jan 2017 03:57 pm
 1.03,"10km W of Cobb, California",01 Feb 2017 02:21 am
 1.03,"17km ESE of Julian, CA",01 Feb 2017 04:42 am
 1.03,"11km ENE of Mattawa, Washington",01 Feb 2017 10:35 am
@@ -4704,9 +4703,6 @@ magnitude,placename,time
 1.01,"24km WSW of Rancho Tehama Reserve, California",28 Feb 2017 02:43 am
 1.01,"8km ENE of Coso Junction, CA",28 Feb 2017 04:19 pm
 1.01,"21km WSW of Beaver, Utah",02 Mar 2017 02:59 am
-1,"184km WNW of Haines Junction, Canada",31 Jan 2017 01:16 pm
-1,"110km W of Cantwell, Alaska",31 Jan 2017 02:30 pm
-1,"3km S of Circle Hot Springs Station, Alaska",31 Jan 2017 03:21 pm
 1,"30km SW of Hawthorne, Nevada",31 Jan 2017 06:36 pm
 1,"41km NNE of Mammoth Lakes, California",31 Jan 2017 10:01 pm
 1,"63km WSW of Delta Junction, Alaska",31 Jan 2017 10:19 pm
