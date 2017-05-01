@@ -25,6 +25,8 @@ const forceCollide = d3.forceCollide(function(d) {
       return radiusScale(d.magnitude) + 2
     })
 
+// simulates forces being applied to the noddes
+
 const simulation = d3.forceSimulation()
   .force('x', forceX)
   .force('y',  forceY)
