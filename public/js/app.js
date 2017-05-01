@@ -25,13 +25,13 @@ const radiusScale = d3.scaleSqrt()
 // force variables for the simulation
 // these forces push nodes to the middle of the screen
 
-const forceX = d3.forceX(width / 2).strength(0.015)
-const forceY = d3.forceY(height / 2).strength(0.015)
+const forceX = d3.forceX(width / 2).strength(0.01)
+const forceY = d3.forceY(height / 2).strength(0.01)
 
 // strength variables
 
-const changeStrength = 0.005
-const changeAlphaState = 0.175
+const changeStrength = 0.08
+const changeAlphaState = 0.1
 
 // horizontal position on screen where data nodes should be pushed
 
