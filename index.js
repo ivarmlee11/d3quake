@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static('public'))
 
 try {
-    new CronJob('0 45 12 * * ?', function() {
+    new CronJob('00 48 12 * * 0-6', function() {
         console.log('this should not be printed');
     })
 } catch(ex) {
@@ -27,7 +27,7 @@ try {
 }
 
 const job = new CronJob({
-  cronTime: '0 45 12 * * ?',
+  cronTime: '00 48 12 * * 0-6',
   onTick: () => {
 		request('https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&updatedafter=2017-01-02&minmagnitude=3&orderby=magnitude',
 		 (error, response, data) => {
