@@ -27,9 +27,9 @@ try {
 }
 
 const job = new CronJob({
-  cronTime: '00 15 12 * * 1-5',
+  cronTime: '00 20 12 * * 1-5',
   onTick: () => {
-		request('https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&updatedafter=2017-01-02&minmagnitude=5&orderby=magnitude',
+		request('https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&updatedafter=2017-01-02&minmagnitude=3&orderby=magnitude',
 		 (error, response, data) => {
 			const quakeInfo = []
 			const parsedUsgsData = JSON.parse(data)
