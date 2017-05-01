@@ -41,7 +41,7 @@ const restOfGroupXLocation = 800
 // prevents svg shapes from colliding
 
 const forceCollide = d3.forceCollide(function(d) {
-      return radiusScale(d.magnitude) + 2 // padding px
+      return radiusScale(d.magnitude) + 2
     })
 
 // simulates forces being applied to the nodes
@@ -63,9 +63,11 @@ d3.queue()
   .defer(d3.csv, '../data/data.csv')
   .await(ready)
 
-function ready(err, dataPoints) {
-
 // select all nodes
+// dataPoints from csv
+// info from dataPoints is appended to the scg elements
+
+function ready(err, dataPoints) {
   const circles = svg.selectAll('.placename')
     .data(dataPoints)
     .enter()
@@ -133,9 +135,13 @@ circles.on('mousemove', function(d) {
 })
 
 // every time this simulation ticks,
-// ticked() is called and 
+// ticked() is called
+
 simulation.nodes(dataPoints).
   on('tick', ticked)
+
+// sets a new x position for the nodes
+// based on radius(magnitude)
 
 function ticked() {
   circles
