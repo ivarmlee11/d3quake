@@ -30,7 +30,7 @@ const forceY = d3.forceY(height / 2).strength(0.015)
 
 // strength variables
 
-const changeStrength = 0.175
+const changeStrength = 0.005
 const changeAlphaState = 0.175
 
 // horizontal position on screen where data nodes should be pushed
