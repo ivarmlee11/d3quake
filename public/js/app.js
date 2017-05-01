@@ -14,6 +14,9 @@ const svg = d3.select('#chart')
   .append('g')
   .attr('transform', 'translate(0,0)')
 
+// set a rule that makes shapes' radius scaled to the number range
+// range is the magnitue scale, domain is px
+
 const radiusScale = d3.scaleSqrt()
       .domain([1, 9])
       .range([.01, 10])
@@ -24,32 +27,45 @@ const radiusScale = d3.scaleSqrt()
 
 const forceX = d3.forceX(width / 2).strength(0.015)
 const forceY = d3.forceY(height / 2).strength(0.015)
+
+// strength variables
+
 const changeStrength = 0.175
 const changeAlphaState = 0.175
+
+// horizontal position on screen where data nodes should be pushed
+
 const chosenMagnitudeXLocation = 200
 const restOfGroupXLocation = 800
 
+// prevents svg shapes from colliding
+
 const forceCollide = d3.forceCollide(function(d) {
-      return radiusScale(d.magnitude) + 2
+      return radiusScale(d.magnitude) + 2 // padding px
     })
 
-// simulates forces being applied to the noddes
+// simulates forces being applied to the nodes
 
 const simulation = d3.forceSimulation()
   .force('x', forceX)
   .force('y',  forceY)
   .force('collide', forceCollide)
 
+// tool tip for data
+
 const tooltip = d3.select('body').append('div')   
   .attr('class', 'tooltip')               
   .style('opacity', 0) 
+
+// wait til data is ready to do something
 
 d3.queue()
   .defer(d3.csv, '../data/data.csv')
   .await(ready)
 
 function ready(err, dataPoints) {
-  console.log(dataPoints.length + ' quakes 2017')
+
+// select all nodes
   const circles = svg.selectAll('.placename')
     .data(dataPoints)
     .enter()
