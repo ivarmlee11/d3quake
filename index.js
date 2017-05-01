@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static('public'))
 
 try {
-    new CronJob('00 34 12 * * 1-5', function() {
+    new CronJob('0 39 12 * * ?', function() {
         console.log('this should not be printed');
     })
 } catch(ex) {

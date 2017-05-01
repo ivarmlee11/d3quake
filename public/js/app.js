@@ -1,7 +1,11 @@
 (function() {
 
+// size of svg
+
 const width = 1000,
       height = 800
+
+// create svg and put a g(group of svg shapes) on it
 
 const svg = d3.select('#chart')
   .append('svg')
@@ -13,6 +17,10 @@ const svg = d3.select('#chart')
 const radiusScale = d3.scaleSqrt()
       .domain([1, 9])
       .range([.01, 10])
+
+
+// force variables for the simulation
+// these forces push nodes to the middle of the screen
 
 const forceX = d3.forceX(width / 2).strength(0.015)
 const forceY = d3.forceY(height / 2).strength(0.015)
@@ -108,6 +116,8 @@ circles.on('mousemove', function(d) {
   tooltip.transition().duration(200).style('opacity', 0)   
 })
 
+// every time this simulation ticks,
+// ticked() is called and 
 simulation.nodes(dataPoints).
   on('tick', ticked)
 
