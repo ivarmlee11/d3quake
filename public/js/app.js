@@ -1,5 +1,5 @@
 (function() {
-console.log('heroku test')
+
 const width = 1000,
       height = 800
 
@@ -39,7 +39,7 @@ d3.queue()
   .await(ready)
 
 function ready(err, dataPoints) {
-  console.log(dataPoints.length + ' quakes above 5.0 since 2017')
+  console.log(dataPoints.length + ' quakes 2017')
   const circles = svg.selectAll('.placename')
     .data(dataPoints)
     .enter()
@@ -91,169 +91,169 @@ function dragended(d) {
   d3.select(this).classed('active', false);
 }
 
-  circles.on('mousemove', function(d) {
-    tooltip.transition()
-    .duration(200)
-    .style('opacity', .9)
-    .style('border-radius', 10)
-    tooltip.html('<h5>' + d.placename + '</h5>' + 
-                '<h5>' + d.magnitude + '</h5>' +
-                '<h5>' + d.time + '</h5>')  
-    .style('left', (d3.event.pageX) + 15 + 'px')     
-    .style('top', (d3.event.pageY - 28) + 'px')    
-  })                  
-  .on('mouseout', function(d) {       
-    tooltip.transition().duration(200).style('opacity', 0)   
-  })
+circles.on('mousemove', function(d) {
+  tooltip.transition()
+  .duration(200)
+  .style('opacity', .9)
+  .style('border-radius', 10)
+  tooltip.html('<h5>' + d.placename + '</h5>' + 
+              '<h5>' + d.magnitude + '</h5>' +
+              '<h5>' + d.time + '</h5>')  
+  .style('left', (d3.event.pageX) + 15 + 'px')     
+  .style('top', (d3.event.pageY - 28) + 'px')    
+})                  
+.on('mouseout', function(d) {       
+  tooltip.transition().duration(200).style('opacity', 0)   
+})
 
-  simulation.nodes(dataPoints).
-    on('tick', ticked)
+simulation.nodes(dataPoints).
+  on('tick', ticked)
 
-  function ticked() {
-    circles
-      .attr('cx', function(d) {
-        return d.x
-      })
-      .attr('cy', function(d) {
-        return d.y
-      })
-  }
+function ticked() {
+  circles
+    .attr('cx', function(d) {
+      return d.x
+    })
+    .attr('cy', function(d) {
+      return d.y
+    })
+}
 
-  d3.select('#all').on('click', function() {
-    simulation
-      .force('x', d3.forceX(function(d) {
-        return 600
-      })
-      .strength(0.05))
-      .alphaTarget(0.1)
-      .restart()
-  })
+d3.select('#all').on('click', function() {
+  simulation
+    .force('x', d3.forceX(function(d) {
+      return 600
+    })
+    .strength(0.05))
+    .alphaTarget(0.1)
+    .restart()
+})
 
-  d3.select('#mag1').on('click', function() {
-    simulation
-      .force('x', d3.forceX(function(d) {
-        if (d.magnitude >= 1 && d.magnitude < 2) { 
-          return chosenMagnitudeXLocation
-        } else {
-          return restOfGroupXLocation
-        }
-      })
-      .strength(changeStrength))
-      .alphaTarget(changeAlphaState)
-      .restart()
-  })
+d3.select('#mag1').on('click', function() {
+  simulation
+    .force('x', d3.forceX(function(d) {
+      if (d.magnitude >= 1 && d.magnitude < 2) { 
+        return chosenMagnitudeXLocation
+      } else {
+        return restOfGroupXLocation
+      }
+    })
+    .strength(changeStrength))
+    .alphaTarget(changeAlphaState)
+    .restart()
+})
 
-  d3.select('#mag2').on('click', function() {
-    simulation
-      .force('x', d3.forceX(function(d) {
-        if (d.magnitude >= 2 && d.magnitude < 3) { 
-          return chosenMagnitudeXLocation
-        } else {
-          return restOfGroupXLocation
-        }
-      })
-      .strength(changeStrength))
-      .alphaTarget(changeAlphaState)
-      .restart()
-  })
+d3.select('#mag2').on('click', function() {
+  simulation
+    .force('x', d3.forceX(function(d) {
+      if (d.magnitude >= 2 && d.magnitude < 3) { 
+        return chosenMagnitudeXLocation
+      } else {
+        return restOfGroupXLocation
+      }
+    })
+    .strength(changeStrength))
+    .alphaTarget(changeAlphaState)
+    .restart()
+})
 
-  d3.select('#mag3').on('click', function() {
-    simulation
-      .force('x', d3.forceX(function(d) {
-        if (d.magnitude >= 3 && d.magnitude < 4) { 
-          return chosenMagnitudeXLocation
-        } else {
-          return restOfGroupXLocation
-        }
-      })
-      .strength(changeStrength))
-      .alphaTarget(changeAlphaState)
-      .restart()
-  })
+d3.select('#mag3').on('click', function() {
+  simulation
+    .force('x', d3.forceX(function(d) {
+      if (d.magnitude >= 3 && d.magnitude < 4) { 
+        return chosenMagnitudeXLocation
+      } else {
+        return restOfGroupXLocation
+      }
+    })
+    .strength(changeStrength))
+    .alphaTarget(changeAlphaState)
+    .restart()
+})
 
-  d3.select('#mag4').on('click', function() {
-    simulation
-      .force('x', d3.forceX(function(d) {
-        if (d.magnitude >= 4 && d.magnitude < 5) { 
-          return chosenMagnitudeXLocation
-        } else {
-          return restOfGroupXLocation
-        }
-      })
-      .strength(changeStrength))
-      .alphaTarget(changeAlphaState)
-      .restart()
-  })
+d3.select('#mag4').on('click', function() {
+  simulation
+    .force('x', d3.forceX(function(d) {
+      if (d.magnitude >= 4 && d.magnitude < 5) { 
+        return chosenMagnitudeXLocation
+      } else {
+        return restOfGroupXLocation
+      }
+    })
+    .strength(changeStrength))
+    .alphaTarget(changeAlphaState)
+    .restart()
+})
 
-  d3.select('#mag5').on('click', function() {
-    simulation
-      .force('x', d3.forceX(function(d) {
-        if (d.magnitude >= 5 && d.magnitude < 6) { 
-          return chosenMagnitudeXLocation
-        } else {
-          return restOfGroupXLocation
-        }
-      })
-      .strength(changeStrength))
-      .alphaTarget(changeAlphaState)
-      .restart()
-  })
+d3.select('#mag5').on('click', function() {
+  simulation
+    .force('x', d3.forceX(function(d) {
+      if (d.magnitude >= 5 && d.magnitude < 6) { 
+        return chosenMagnitudeXLocation
+      } else {
+        return restOfGroupXLocation
+      }
+    })
+    .strength(changeStrength))
+    .alphaTarget(changeAlphaState)
+    .restart()
+})
 
-  d3.select('#mag6').on('click', function() {
-    simulation
-      .force('x', d3.forceX(function(d) {
-        if (d.magnitude >= 6 && d.magnitude < 7) { 
-          return chosenMagnitudeXLocation
-        } else {
-          return restOfGroupXLocation
-        }
-      })
-      .strength(changeStrength))
-      .alphaTarget(changeAlphaState)
-      .restart()
-  })
+d3.select('#mag6').on('click', function() {
+  simulation
+    .force('x', d3.forceX(function(d) {
+      if (d.magnitude >= 6 && d.magnitude < 7) { 
+        return chosenMagnitudeXLocation
+      } else {
+        return restOfGroupXLocation
+      }
+    })
+    .strength(changeStrength))
+    .alphaTarget(changeAlphaState)
+    .restart()
+})
 
-  d3.select('#mag7').on('click', function() {
-    simulation
-      .force('x', d3.forceX(function(d) {
-        if (d.magnitude >= 7 && d.magnitude < 8) { 
-          return chosenMagnitudeXLocation
-        } else {
-          return restOfGroupXLocation
-        }
-      })
-      .strength(changeStrength))
-      .alphaTarget(changeAlphaState)
-      .restart()
-  })
+d3.select('#mag7').on('click', function() {
+  simulation
+    .force('x', d3.forceX(function(d) {
+      if (d.magnitude >= 7 && d.magnitude < 8) { 
+        return chosenMagnitudeXLocation
+      } else {
+        return restOfGroupXLocation
+      }
+    })
+    .strength(changeStrength))
+    .alphaTarget(changeAlphaState)
+    .restart()
+})
 
-  d3.select('#mag8').on('click', function() {
-    simulation
-      .force('x', d3.forceX(function(d) {
-        if (d.magnitude >= 8 && d.magnitude < 9) { 
-          return chosenMagnitudeXLocation
-        } else {
-          return restOfGroupXLocation
-        }
-      })
-      .strength(changeStrength))
-      .alphaTarget(changeAlphaState)
-      .restart()
-  })
+d3.select('#mag8').on('click', function() {
+  simulation
+    .force('x', d3.forceX(function(d) {
+      if (d.magnitude >= 8 && d.magnitude < 9) { 
+        return chosenMagnitudeXLocation
+      } else {
+        return restOfGroupXLocation
+      }
+    })
+    .strength(changeStrength))
+    .alphaTarget(changeAlphaState)
+    .restart()
+})
 
-  d3.select('#mag9').on('click', function() {
-    simulation
-      .force('x', d3.forceX(function(d) {
-        if (d.magnitude >= 9) { 
-          return chosenMagnitudeXLocation
-        } else {
-          return restOfGroupXLocation
-        }
-      })
-      .strength(changeStrength))
-      .alphaTarget(changeAlphaState)
-      .restart()
-  })
+d3.select('#mag9').on('click', function() {
+  simulation
+    .force('x', d3.forceX(function(d) {
+      if (d.magnitude >= 9) { 
+        return chosenMagnitudeXLocation
+      } else {
+        return restOfGroupXLocation
+      }
+    })
+    .strength(changeStrength))
+    .alphaTarget(changeAlphaState)
+    .restart()
+})
 
 
 }
