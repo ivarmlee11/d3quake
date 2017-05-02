@@ -31,7 +31,9 @@ const forceY = d3.forceY(height / 2).strength(0.01)
 // strength variables
 
 const changeStrength = 0.08
-const changeAlphaState = 0.1
+
+
+const changeAlphaState = 0.06
 
 // horizontal position on screen where data nodes should be pushed
 
@@ -159,8 +161,8 @@ d3.select('#all').on('click', function() {
       return 600
     })
     .strength(0.05))
-    .alphaTarget(0.1)
-    .restart()
+    .alphaTarget(0.2) // smooth transition
+    .restart() // start the simulation over
 })
 
 d3.select('#mag1').on('click', function() {
